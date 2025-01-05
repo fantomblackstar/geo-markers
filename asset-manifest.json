@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/geo-markers/static/css/main.36ff61a3.css",
+    "main.js": "/geo-markers/static/js/main.d4b91ddc.js",
+    "index.html": "/geo-markers/index.html",
+    "main.36ff61a3.css.map": "/geo-markers/static/css/main.36ff61a3.css.map",
+    "main.d4b91ddc.js.map": "/geo-markers/static/js/main.d4b91ddc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36ff61a3.css",
+    "static/js/main.d4b91ddc.js"
+  ]
+}
