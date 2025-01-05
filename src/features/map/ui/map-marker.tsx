@@ -20,12 +20,11 @@ const MapMarker: FC<MapMarkerProps> = ({ data }) => {
 
   return (
     <Marker position={[latitude, longitude]} icon={markerIcon}>
-      <Popup className="text-base max-w-40">
-        <p className="font-bold">
+      <Popup className="text-base">
+        <p className="font-bold text-center">
           {latitude}, {longitude}
         </p>
-        <p>{geoDescription}</p>
-        {geoDescription}
+        <p className="text-nowrap">{geoDescription}</p>
       </Popup>
       <Tooltip permanent direction="top" opacity={1}>
         <div className="border-2 text-base p-2">
