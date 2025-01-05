@@ -1,11 +1,12 @@
-import React from "react";
 import "./global.css";
+import "leaflet/dist/leaflet.css";
+import { Home } from "../pages/home";
 
 function App() {
   return (
-    <div>
-      <p className="text-red-500">fdfd</p>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
