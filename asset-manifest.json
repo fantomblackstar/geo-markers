@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/geo-markers/static/css/main.36ff61a3.css",
-    "main.js": "/geo-markers/static/js/main.d4b91ddc.js",
+    "main.css": "/geo-markers/static/css/main.c0329a86.css",
+    "main.js": "/geo-markers/static/js/main.a3870317.js",
+    "static/media/file-example.png": "/geo-markers/static/media/file-example.62e9353e24adf1598f19.png",
     "index.html": "/geo-markers/index.html",
-    "main.36ff61a3.css.map": "/geo-markers/static/css/main.36ff61a3.css.map",
-    "main.d4b91ddc.js.map": "/geo-markers/static/js/main.d4b91ddc.js.map"
+    "main.c0329a86.css.map": "/geo-markers/static/css/main.c0329a86.css.map",
+    "main.a3870317.js.map": "/geo-markers/static/js/main.a3870317.js.map"
   },
   "entrypoints": [
-    "static/css/main.36ff61a3.css",
-    "static/js/main.d4b91ddc.js"
+    "static/css/main.c0329a86.css",
+    "static/js/main.a3870317.js"
   ]
 }
