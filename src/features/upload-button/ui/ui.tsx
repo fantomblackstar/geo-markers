@@ -35,7 +35,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
   return (
     <>
       <button
-        className="rounded px-4 py-2 bg-indigo-900 text-white flex"
+        className="rounded px-4 py-2 bg-indigo-900 text-white flex hover:bg-indigo-800 active:bg-indigo-600"
         type="button"
         onClick={handleButtonClick}
       >
