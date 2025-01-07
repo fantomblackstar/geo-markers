@@ -14,7 +14,7 @@ const Map: FC<MapProps> = ({ markers }) => {
     <MapContainer
       center={MAP_POSITION}
       zoom={MAP_ZOOM}
-      className="w-full h-full"
+      className="w-full h-full z-10"
     >
       <MapLayersControl />
       {markers?.map((marker) => (

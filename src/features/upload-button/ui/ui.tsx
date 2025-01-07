@@ -40,7 +40,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
         onClick={handleButtonClick}
       >
         <UploadIcon className="mr-2" />
-        <span>Завантажити координати</span>
+        <span className="text-sm md:text-base">Завантажити координати</span>
       </button>
       <input
         type="file"
