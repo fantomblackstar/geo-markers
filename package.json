@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://fantomblackstar.github.io/geo-markers",
   "dependencies": {
+    "@ngageoint/mgrs-js": "^1.0.0",
     "cra-template-typescript": "1.2.0",
     "leaflet": "^1.9.4",
     "react": "^19.0.0-rc.1",
