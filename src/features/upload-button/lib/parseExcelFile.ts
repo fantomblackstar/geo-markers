@@ -39,10 +39,9 @@ export async function parseExcelFile(file: File | Buffer): Promise<GeoItem[]> {
           );
 
           const geoItems: GeoItem[] = sheetData
-            .filter((item) => item && item.length >= 4)
-            .map((item: any) => {
-              console.log("item", item);
-              const [id, geo, geoDescription, title] = item;
+            .filter((item) => item && item.length >= 2)
+            .map((item: any, index: number) => {
+              const [id = index + 1, geo, geoDescription, title] = item;
               const [latitude, longitude] = parseLatLongFromGeoCode(geo);
               return {
                 id: id.toString(),
