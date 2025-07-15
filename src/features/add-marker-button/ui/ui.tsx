@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { NewMarkerDialog } from "./new-marker-dialog";
 import { GeoItem } from "src/shared/model";
 import { MapPinPlus } from "lucide-react";
+import { useMedia } from "src/shared/lib";
 
 interface AddMarkerButtonProps {
   onSubmit: (marker: GeoItem) => void;
@@ -10,6 +11,7 @@ interface AddMarkerButtonProps {
 
 const AddMarkerButton: FC<AddMarkerButtonProps> = ({ onSubmit, markerIds }) => {
   const [open, setOpen] = useState(false);
+  const { isMobile } = useMedia();
 
   const onToggleDialog = () => {
     setOpen((prev) => !prev);
@@ -23,7 +25,7 @@ const AddMarkerButton: FC<AddMarkerButtonProps> = ({ onSubmit, markerIds }) => {
         onClick={onToggleDialog}
       >
         <MapPinPlus className="mr-2" />
-        Додати маркер
+        {!isMobile && "Додати маркер"}
       </button>
       <NewMarkerDialog
         open={open}

@@ -2,6 +2,7 @@ import React, { Dispatch, SetStateAction, useRef } from "react";
 import { UploadIcon } from "./upload-icon";
 import { parseExcelFile } from "../lib";
 import { GeoItem } from "src/shared/model";
+import { useMedia } from "src/shared/lib";
 
 type UploadButtonProps = {
   onGeoItemsParse: Dispatch<SetStateAction<GeoItem[]>>;
@@ -10,6 +11,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
   onGeoItemsParse,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const { isMobile } = useMedia();
 
   const handleButtonClick = () => {
     fileInputRef.current?.click();
@@ -40,7 +42,9 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
         onClick={handleButtonClick}
       >
         <UploadIcon className="mr-2" />
-        <span className="text-sm md:text-base">Завантажити координати</span>
+        {!isMobile && (
+          <span className="text-sm md:text-base">Завантажити координати</span>
+        )}
       </button>
       <input
         type="file"
