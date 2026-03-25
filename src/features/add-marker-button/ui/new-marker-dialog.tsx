@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
-import { GeoItem } from "src/shared/model";
-import { parseLatLongFromGeoCode } from "src/shared/lib";
+import { GeoItem } from "@/shared/model";
+import { parseLatLongFromGeoCode } from "@/shared/lib";
 import {
   Dialog,
   DialogContent,
@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogFooter,
   DialogDescription,
-} from "src/shared/ui/dialog";
+} from "@/shared/ui/dialog";
 
 type CoordinateType = "latlng" | "mgrs";
 

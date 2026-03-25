@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Marker, Popup, Tooltip } from "react-leaflet";
 import { Icon } from "leaflet";
-import { GeoItem } from "src/shared/model";
+import { GeoItem } from "@/shared/model";
 
 type MapMarkerProps = {
   data: GeoItem;

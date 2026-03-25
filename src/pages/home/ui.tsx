@@ -1,10 +1,10 @@
-import { GeoItem } from "src/shared/model";
-import { Map } from "../../features/map";
-import { Header } from "src/features/header";
-import { UploadButton } from "src/features/upload-button";
+import { GeoItem } from "@/shared/model";
+import { Map } from "@/features/map";
+import { Header } from "@/features/header";
+import { UploadButton } from "@/features/upload-button";
 import { useState } from "react";
-import { UploadTipIcon } from "src/features/upload-tip-icon";
-import { AddMarkerButton } from "src/features/add-marker-button";
+import { UploadTipIcon } from "@/features/upload-tip-icon";
+import { AddMarkerButton } from "@/features/add-marker-button";
 import { TrashIcon } from "lucide-react";
 
 export const Home = () => {

@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { NewMarkerDialog } from "./new-marker-dialog";
-import { GeoItem } from "src/shared/model";
+import { GeoItem } from "@/shared/model";
 import { MapPinPlus } from "lucide-react";
-import { useMedia } from "src/shared/lib";
+import { useMedia } from "@/shared/lib";
 
 interface AddMarkerButtonProps {
   onSubmit: (marker: GeoItem) => void;

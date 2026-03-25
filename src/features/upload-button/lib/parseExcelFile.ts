@@ -1,6 +1,6 @@
-import { GeoItem } from "src/shared/model";
+import { GeoItem } from "@/shared/model";
 import * as XLSX from "xlsx";
-import { parseLatLongFromGeoCode } from "src/shared/lib";
+import { parseLatLongFromGeoCode } from "@/shared/lib";
 
 export async function parseExcelFile(file: File | Buffer): Promise<GeoItem[]> {
   return await new Promise((resolve) => {
@@ -15,7 +15,7 @@ export async function parseExcelFile(file: File | Buffer): Promise<GeoItem[]> {
             workbook.Sheets[sheet],
             {
               header: 1,
-            }
+            },
           );
 
           const geoItems: GeoItem[] = sheetData

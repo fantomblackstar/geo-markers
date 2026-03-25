@@ -1,8 +1,8 @@
 import React, { Dispatch, SetStateAction, useRef } from "react";
 import { UploadIcon } from "./upload-icon";
 import { parseExcelFile } from "../lib";
-import { GeoItem } from "src/shared/model";
-import { useMedia } from "src/shared/lib";
+import { GeoItem } from "@/shared/model";
+import { useMedia } from "@/shared/lib";
 
 type UploadButtonProps = {
   onGeoItemsParse: Dispatch<SetStateAction<GeoItem[]>>;
@@ -18,7 +18,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
   };
 
   const handleFileChange = async (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -28,7 +28,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({
   };
 
   const onInputClick = (
-    event: React.MouseEvent<HTMLInputElement, MouseEvent>
+    event: React.MouseEvent<HTMLInputElement, MouseEvent>,
   ) => {
     const element = event.target as HTMLInputElement;
     element.value = "";

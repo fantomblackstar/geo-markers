@@ -1,7 +1,7 @@
 import { MapContainer } from "react-leaflet";
 import { MAP_POSITION, MAP_ZOOM } from "../lib";
 import { MapLayersControl } from "./map-layers-control";
-import { GeoItem } from "src/shared/model";
+import { GeoItem } from "@/shared/model";
 import { FC } from "react";
 import { MapMarker } from "./map-marker";
 
