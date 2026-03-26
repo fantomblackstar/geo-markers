@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <section className="relative w-full h-screen flex flex-col">
       <Header />
-      <div className="h-auto grow md:mt-14 mt-[100px] relative">
+      <div className="h-auto grow md:mt-12 mt-[100px] relative">
         <Map markers={geoItems} />
         <MapTools />
       </div>

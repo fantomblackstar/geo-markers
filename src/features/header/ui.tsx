@@ -1,8 +1,9 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { UploadButton } from "src/features/upload-button";
-import { UploadTipIcon } from "src/features/upload-tip-icon";
-import { useGeoItemsStore } from "src/shared/lib";
+import { LogOut, Map, FileText } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+
+import { useAuth } from "src/shared/model/auth-context";
 
 type HeaderProps = {
   className?: string;
@@ -10,7 +11,8 @@ type HeaderProps = {
 };
 
 export const Header: React.FC<HeaderProps> = ({ className, bodyClassName }) => {
-  const setGeoItems = useGeoItemsStore((state) => state.setGeoItems);
+  const { logout } = useAuth();
+  const location = useLocation();
 
   return (
     <header
@@ -25,10 +27,40 @@ export const Header: React.FC<HeaderProps> = ({ className, bodyClassName }) => {
           bodyClassName,
         )}
       >
-        <div className="flex flex-0 gap-2 items-center">
-          <UploadButton onGeoItemsParse={setGeoItems} />
-          <UploadTipIcon />
-        </div>
+        <nav className="flex gap-2 items-center">
+          <Link
+            to="/"
+            className={twMerge(
+              "flex items-center gap-2 px-4 py-2 rounded-lg transition-colors text-sm font-medium",
+              location.pathname === "/"
+                ? "bg-blue-700 text-white"
+                : "bg-blue-600 hover:bg-blue-700 text-white",
+            )}
+          >
+            <Map className="w-4 h-4" />
+            <span className="hidden sm:inline">Карта</span>
+          </Link>
+          <Link
+            to="/parse-pdf"
+            className={twMerge(
+              "flex items-center gap-2 px-4 py-2 rounded-lg transition-colors text-sm font-medium",
+              location.pathname === "/parse-pdf"
+                ? "bg-blue-700 text-white"
+                : "bg-blue-600 hover:bg-blue-700 text-white",
+            )}
+          >
+            <FileText className="w-4 h-4" />
+            <span className="hidden sm:inline">Парсер PDF</span>
+          </Link>
+        </nav>
+        <button
+          onClick={logout}
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors text-sm font-medium"
+          title="Вийти"
+        >
+          <LogOut className="w-4 h-4" />
+          <span className="hidden sm:inline">Вийти</span>
+        </button>
       </div>
     </header>
   );

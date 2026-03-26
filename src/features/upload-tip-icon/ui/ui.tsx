@@ -1,13 +1,13 @@
 import React from "react";
-import { InfoIcon } from "./info-icon";
+import { Info } from "lucide-react";
 import { InfoTooltip } from "./info-tooltip";
 
 export const UploadTipIcon: React.FC = () => {
   return (
     <>
-      <InfoIcon
+      <Info
         data-tooltip-id="upload-tooltip"
-        className="size-7 cursor-pointer"
+        className="size-7 cursor-pointer text-blue-800"
       />
       <InfoTooltip />
     </>
