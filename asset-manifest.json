@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/geo-markers/static/css/main.84972c8c.css",
-    "main.js": "/geo-markers/static/js/main.148cc780.js",
-    "static/media/pdf.worker.min.mjs": "/geo-markers/static/media/pdf.worker.min.dc865549b6036da2b280.mjs",
-    "static/media/file-example.png": "/geo-markers/static/media/file-example.d6f7cba6ee47cac381d1.png",
-    "index.html": "/geo-markers/index.html",
-    "main.84972c8c.css.map": "/geo-markers/static/css/main.84972c8c.css.map",
-    "main.148cc780.js.map": "/geo-markers/static/js/main.148cc780.js.map"
+    "main.css": "https://fantomblackstar.github.io/geo-markers/static/css/main.84972c8c.css",
+    "main.js": "https://fantomblackstar.github.io/geo-markers/static/js/main.99eaf4e7.js",
+    "static/media/file-example.png": "https://fantomblackstar.github.io/geo-markers/static/media/file-example.d6f7cba6ee47cac381d1.png",
+    "index.html": "https://fantomblackstar.github.io/geo-markers/index.html",
+    "main.84972c8c.css.map": "https://fantomblackstar.github.io/geo-markers/static/css/main.84972c8c.css.map",
+    "main.99eaf4e7.js.map": "https://fantomblackstar.github.io/geo-markers/static/js/main.99eaf4e7.js.map"
   },
   "entrypoints": [
     "static/css/main.84972c8c.css",
-    "static/js/main.148cc780.js"
+    "static/js/main.99eaf4e7.js"
   ]
 }
