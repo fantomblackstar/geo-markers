@@ -12,7 +12,7 @@ function App() {
   return (
     <AuthProvider>
       <AuthGuard>
-        <BrowserRouter>
+        <BrowserRouter basename="/geo-markers">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/parse-pdf" element={<ParsePdf />} />
