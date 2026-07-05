@@ -20,7 +20,7 @@ export const MapTools: FC = () => {
   };
 
   return (
-    <div className="flex gap-2 items-center absolute left-10 bottom-5 z-20">
+    <div className="flex gap-2 items-center justify-end flex-wrap absolute top-4 z-20 container left-1/2 -translate-x-1/2">
       <div className="flex gap-2 items-center">
         <UploadTipIcon />
         <UploadButton onGeoItemsParse={setGeoItems} />
